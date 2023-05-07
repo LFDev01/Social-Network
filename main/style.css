@@ -1,0 +1,202 @@
+body {
+  background-color: #000;
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100vh;
+  margin: 0px;
+}
+
+@keyframes hide-element {
+  from {
+    opacity: 1.0;
+  }
+
+  to {
+    opacity: 0.0;
+  }
+}
+
+@keyframes show-element {
+  from {
+    opacity: 0.0;
+  }
+
+  to {
+    opacity: 1.0;
+  }
+}
+
+p {
+  margin: 0px;
+}
+
+.light-effect {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 0.0;
+  animation-name: none;
+  animation-duration: 2s;
+}
+
+.slogan {
+  position: absolute;
+  width: 900px;
+  right: 100px;
+  top: 120px;
+  user-select: none;
+}
+
+.slogan-text {
+  color: #fff;
+  font-size: 64px;
+  text-align: end;
+  font-weight: bold;
+  animation-name: none;
+  animation-duration: 1s;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 680px;
+  height: 100%;
+  background-color: #0F0F0F;
+}
+
+.items {
+  display: grid;
+  place-content: center;
+  animation-name: none;
+  animation-duration: 0.5s;
+  transition: 0.5s;
+  opacity: 0.0;
+}
+
+.icon {
+  position: absolute;
+  top: 100px;
+}
+
+.buttons {
+  position: absolute;
+  display: grid;
+  place-self: center;
+  gap: 30px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.video {
+  border-radius: 5px;
+}
+
+.button {
+  font-family: inherit;
+  padding: 10px 30px;
+  font-weight: bolder;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  border: 3px solid rgba(0, 0, 0, 0.0);
+  user-select: none;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 20px 4px rgba(0, 224, 255, 0.5);
+  border: 3px solid rgba(64 244, 255, 0.5);
+}
+
+.button:active {
+  transform: scale(1.2);
+}
+
+#sign-up{
+  background-color: #0F0F0F;
+  color: #fff;
+}
+
+.sign-in-section {
+  display: grid;
+  gap: 20px;
+  place-items: center;
+  animation-name: none;
+  animation-duration: 0.5s;
+  opacity: 0.0;
+}
+
+.sign-in-item {
+  display: grid;
+  gap: 5px;
+}
+
+.input-style {
+  width: 250px;
+  height: 30px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.0);
+  transition: 0.3s;
+}
+
+.input-style:hover {
+  box-shadow: 0px 0px 20px 4px rgba(0, 224, 255, 0.5);
+  border: 2px solid rgba(64, 244, 255, 0.5);
+}
+
+.input-style:focus {
+  box-shadow: 0px 0px 20px 4px rgba(0, 224, 255, 0.5);
+  border: 2px solid rgba(64, 244, 255, 0.5);
+}
+
+.sign-in-text {
+  color: #040404;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  user-select: none;
+}
+
+.exit-button {
+  border-style: none;
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-weight: bolder;
+  user-select: none;
+  transition: 0.3s;
+  font-size: 30px;
+}
+
+.exit-button:hover {
+  color: rgba(0, 224, 255, 0.5);
+  text-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#sign-in{
+  color: #0f0f0f;
+}
+
+#confirm-sign-in{
+  background-color: rgba(0, 224, 255, 0.5);
+  color: #fff;
+}
+
+#confirm-sign-in:hover{
+  background-color: #fff;
+  color: #0F0F0F;
+}
