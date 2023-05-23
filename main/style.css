@@ -127,7 +127,7 @@ p {
 
 .sign-in-section {
   display: grid;
-  gap: 20px;
+  gap: 30px;
   place-items: center;
   animation-name: none;
   animation-duration: 0.5s;
@@ -193,7 +193,7 @@ p {
 
 #confirm-sign-in{
   background-color: rgba(0, 224, 255, 0.5);
-  color: #fff;
+  color: #0f0f0f;
 }
 
 #confirm-sign-in:hover{

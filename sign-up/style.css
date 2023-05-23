@@ -158,6 +158,7 @@ span {
 }
 
 .empty-field {
+  font-weight: bolder;
   position: absolute;
   color: red;
   top: 36px;

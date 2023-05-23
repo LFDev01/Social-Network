@@ -1,4 +1,4 @@
-function saveUserData() {
+function validateInputs() {
   console.log("Data saved");
 }
 
@@ -43,7 +43,7 @@ function confirmSignUp() {
   });
 
   if (!emptyField) {
-    saveUserData();
+    validateInputs();
   }
 }
 

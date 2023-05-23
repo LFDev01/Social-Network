@@ -12,7 +12,7 @@ function signInBox() {
       <input type="password" class="input-style">
     </div>
 
-    <a class="button" id="confirm-sign-in">Sign In<a/>
+    <button class="button" id="confirm-sign-in">Sign In</button>
   </section>
   `;
 }
@@ -51,8 +51,8 @@ function signIn() {
   setTimeout(() => {
     const exitBtn = document.querySelector('.exit-button');
     exitBtn.addEventListener('click', signInExit);
-    Items.style.width = '420px';
-    Items.style.height = '320px';
+    Items.style.width = '450px';
+    Items.style.height = '300px';
   }, 600);
 
   setTimeout(() => {
