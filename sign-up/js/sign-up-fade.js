@@ -16,3 +16,6 @@ function fadeLightEffect() {
 }
 
 window.onload = fadeLightEffect;
+
+
+// <span class="error-message">You need to fill this field.</span>

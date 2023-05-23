@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -10,32 +10,34 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
   <div class="light-effect"></div>
   <section class="sign-up-items">
+    <h1 class="title">Welcome to the New World</h1>
     <div class="sign-up-form">
-      <h1 class="title"></h1>
+
       <div class="form-field">
         <span class="input-text">Username</span>
-        <input type="text" class="input-style">
+        <input type="text" class="input-style check-input">
       </div>
 
       <div class="form-field pass-field">
         <span class="input-text">Password</span>
-        <input type="password" class="input-style password-input-state" max="32">
+        <input type="password" class="input-style password-input-state check-input" max="32">
         <img src="../img/pass-hide.png" alt="" class="pass-icon">
       </div>
 
       <div class="form-field">
         <span class="input-text">E-mail</span>
-        <input type="email" class="input-style">
+        <input type="email" class="input-style check-input">
       </div>
 
       <div class="form-field">
         <span class="input-text">Birthdate</span>
-        <input type="date" class="input-style">
+        <input type="date" class="input-style check-input">
       </div>
 
       <button class="sign-up-button">Sign Up</button>
@@ -45,6 +47,7 @@
 
   <script src="./js/sign-up-fade.js"></script>
   <script src="./js/pass-hide-show.js"></script>
+  <script src="./js/confirm-sign-up.js"></script>
 
 </body>
 

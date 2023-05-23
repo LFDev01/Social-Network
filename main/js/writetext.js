@@ -14,12 +14,13 @@ function writeText() {
 
     setTimeout(() => {
       wordOutput.style.animationName = 'hide-element';
-      setTimeout(() => {
-        wordOutput.textContent = '';
-        wordOutput.style.animationName = 'none';
-        writeInterval = setInterval(writeText, 100);
-      }, 900);
     }, 2500);
+
+    setTimeout(() => {
+      wordOutput.textContent = '';
+      wordOutput.style.animationName = 'none';
+      writeInterval = setInterval(writeText, 100);
+    }, 3400);
   }
 }
 

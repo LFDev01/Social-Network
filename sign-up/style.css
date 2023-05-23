@@ -74,6 +74,7 @@ body {
 }
 
 .form-field {
+  position: relative;
   display: grid;
   gap: 5px;
 }
@@ -153,4 +154,12 @@ body {
 
 span {
   color: #fff;
+}
+
+.error-message {
+  position: absolute;
+  color: red;
+  top: 36px;
+  left: 55px;
+  user-select: none;
 }
