@@ -46,20 +46,23 @@ function signIn() {
     Items.style.width = '10px';
     Items.style.height = '10px';
     Items.style.position = 'relative';
+  }, 500);
+
+  setTimeout(() => {
+    const exitBtn = document.querySelector('.exit-button');
+    exitBtn.addEventListener('click', signInExit);
+    Items.style.width = '420px';
+    Items.style.height = '320px';
+  }, 600);
+
+  setTimeout(() => {
+    const signInSection = document.querySelector('.sign-in-section');
+    signInSection.style.animationName = 'show-element';
 
     setTimeout(() => {
-      const exitBtn = document.querySelector('.exit-button');
-      exitBtn.addEventListener('click', signInExit);
-      Items.style.width = '420px';
-      Items.style.height = '320px';
-
-      setTimeout(() => {
-        const signInSection = document.querySelector('.sign-in-section');
-        signInSection.style.animationName = 'show-element';
-        setTimeout(() => { signInSection.style.opacity = 1.0; }, 250);
-      }, 500);
-    }, 100);
-  }, 500);
+      signInSection.style.opacity = 1.0;
+    }, 250);
+  }, 1000);
 }
 
 function signUp() {
@@ -77,6 +80,7 @@ function signUp() {
 function pageLoad() {
   const Items = document.querySelector('.items');
   Items.style.animationName = 'show-element';
+
   setTimeout(() => {
     Items.style.opacity = 1.0;
   }, 500);
