@@ -1,6 +1,7 @@
 let isHide = true;
 
 function changePasswordState() {
+  const inputState = document.querySelector('.password-input-state');
   if (isHide) {
     passIcon.setAttribute('src', '../img/pass-show.png');
     inputState.setAttribute('type', 'text');
@@ -12,6 +13,5 @@ function changePasswordState() {
   }
 }
 
-const inputState = document.querySelector('.password-input-state');
 const passIcon = document.querySelector('.pass-icon');
 passIcon.addEventListener('click', changePasswordState);

@@ -28,14 +28,17 @@ function signInExit() {
     Items.style.width = '10px';
     Items.style.height = '10px';
     Items.style.opacity = 0.0;
-    setTimeout(() => {
-      location.reload();
-    }, 500);
   }, 100);
+
+  setTimeout(() => {
+    location.reload();
+  }, 500);
 }
 
 function signIn() {
+  const Items = document.querySelector('.items');
   Items.style.animationName = 'hide-element';
+
   setTimeout(() => {
     Items.innerHTML = signInBox();
     Items.style.backgroundColor = '#fff';
@@ -72,6 +75,7 @@ function signUp() {
 }
 
 function pageLoad() {
+  const Items = document.querySelector('.items');
   Items.style.animationName = 'show-element';
   setTimeout(() => {
     Items.style.opacity = 1.0;
@@ -79,7 +83,6 @@ function pageLoad() {
 }
 
 window.onload = pageLoad;
-const Items = document.querySelector('.items');
 
 const signUpButton = document.querySelector('#sign-up');
 signUpButton.addEventListener('click', signUp);
