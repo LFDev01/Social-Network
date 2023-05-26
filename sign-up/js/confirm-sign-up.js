@@ -25,20 +25,20 @@ function confirmSignUp() {
   formFields.forEach((field) => {
     const checkInput = field.querySelector(".check-input");
 
-    if (!checkInput.value) {
+    if (!checkInput.value && !field.querySelector(".empty-field")) {
       const emptyInfo = document.createElement("span");
       emptyInfo.textContent = "This field needs to be filled.";
       emptyInfo.classList.add("empty-field");
-      emptyField = true;
+
+      field.appendChild(emptyInfo);
+      checkInput.addEventListener("focus", removeErrorMessage);
 
       if (checkInput.type === "date") {
         checkInput.type = "text";
       }
 
-      if (!field.querySelector(".empty-field")) {
-        field.appendChild(emptyInfo);
-        checkInput.addEventListener("focus", removeErrorMessage);
-      };
+      emptyField = true;
+
     }
   });
 
